@@ -102,38 +102,121 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 ### Procedure
-/* write all the steps invloved */
+```
 
 
+1.Using nand gates and wires construct sr flip flop.
+
+2.Repeat same steps to construct JK,D,T flipflops.
+
+3.Find Rtl logic and timing diagram for all flipflops.
+
+4.end the program.
+
+```
 
 ### PROGRAM 
-/*
+
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: P. Sri Varshan
+RegisterNumber:  22008051
 
+Program for SR FLIPFLOPs
 
+```
+module SR(s,r,clk,q,qbar);
+input s,r,clk;
+output q,qbar;
+wire x,y;
+nand(x,s,clk);
+nand(y,r,clk);
+nand(q,x,qbar);
+nand(qbar,y,q);
+endmodule
 
-
+```
 
 
 ### RTL LOGIC FOR FLIPFLOPS 
 
+#### RTL for SR FLIPFLOP
 
-
-
-
-
-
+![SR RTL](https://user-images.githubusercontent.com/114944059/212622248-4d7b2e89-7c4f-4ef5-8d41-a9b11d67914c.jpg)
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
+#### Timing Diagram for SR FLIPFLOP 
+
+![SR TIME](https://user-images.githubusercontent.com/114944059/212622475-88416209-e31b-4aeb-9ce3-b93fb31cf2f8.jpg)
 
 
+### PROGRAM 
+
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: P. Sri Varshan
+RegisterNumber:  22008051
+
+Program for JK FLIPFLOPs
+
+```
+module JK (j,k,clk,q,qbar);
+input j,k,clk;
+output q,qbar;
+wire x,y;
+nand(x,j,clk,qbar);
+nand(y,k,clk,q);
+nand(q,x,qbar);
+nand(qbar,y,q);
+endmodule
+```
+
+### RTL LOGIC FOR FLIPFLOPS 
+
+#### RTL for JK FLIPFLOP
+
+![JK RTL](https://user-images.githubusercontent.com/114944059/212626451-f4a2e0aa-28cb-4c26-ae4d-43b595b214db.jpg)
 
 
+### TIMING DIGRAMS FOR FLIP FLOPS 
+
+#### Timing Diagram for JK FLIPFLOP 
+
+![jk time](https://user-images.githubusercontent.com/114944059/212628207-dc8ccc44-8fe8-4149-9859-0490e5acafa3.jpg)
+
+
+### PROGRAM 
+
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: P. Sri Varshan
+RegisterNumber:  22008051
+
+Program for D FLIPFLOPs
+
+```
+module D(d,clk,q,qbar);
+input d,clk;
+output q,qbar;
+assign dbar = !d;
+wire x,y;
+nand(x,d,clk);
+nand(y,dbar,clk);
+nand(q,x,qbar);
+nand(qbar,y,q);
+endmodule
+
+```
+
+### RTL LOGIC FOR FLIPFLOPS 
+
+#### RTL for D FLIPFLOP
+
+![d rtl](https://user-images.githubusercontent.com/114944059/212631537-45dadf46-7bdb-4445-ba35-9d6077d931bd.jpg)
+
+
+### TIMING DIGRAMS FOR FLIP FLOPS 
+
+#### Timing Diagram for D FLIPFLOP 
 
 
 
