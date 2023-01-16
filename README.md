@@ -218,6 +218,39 @@ endmodule
 
 #### Timing Diagram for D FLIPFLOP 
 
+![d time](https://user-images.githubusercontent.com/114944059/212642794-b9b40510-5f94-419e-9c2b-5401d926eed9.jpg)
+
+
+### PROGRAM 
+
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: P. Sri Varshan
+RegisterNumber:  22008051
+
+Program for T FLIPFLOPs
+
+```
+module T(t,clk,q,qbar);
+input t,clk;
+output q,qbar;
+wire s,r;
+nand(s,t,clk,qbar);
+nand(r,t,clk,q);
+nand(q,s,qbar);
+nand(qbar,r,q);
+endmodule
+```
+
+### RTL LOGIC FOR FLIPFLOPS 
+
+#### RTL for T FLIPFLOP
+
+![t rtl](https://user-images.githubusercontent.com/114944059/212643855-4865561a-10e7-4044-a2c8-24b0a271a86d.jpg)
+
+
+### TIMING DIGRAMS FOR FLIP FLOPS 
+
+#### Timing Diagram for T FLIPFLOP
 
 
 ### RESULTS 
