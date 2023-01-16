@@ -252,5 +252,10 @@ endmodule
 
 #### Timing Diagram for T FLIPFLOP
 
+![t time](https://user-images.githubusercontent.com/114944059/212646103-796bcc9b-a8da-41fc-b952-835408f9ecff.jpg)
+
 
 ### RESULTS 
+
+Thus, the program for flipflops is implemented and its functional table is successfully verified in quartus using Verilog programming.
+
