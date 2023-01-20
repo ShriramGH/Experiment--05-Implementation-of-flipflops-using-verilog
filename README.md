@@ -128,7 +128,9 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ### PROGRAM 
 
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
+
 Developed by: Shriram S
+
 RegisterNumber:  22008494
 
 Program for SR FLIPFLOPs
@@ -164,7 +166,9 @@ endmodule
 ### PROGRAM 
 
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
+
 Developed by: Shriram S
+
 RegisterNumber:  22008494
 
 Program for JK FLIPFLOPs
@@ -198,7 +202,9 @@ endmodule
 ### PROGRAM 
 
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
+
 Developed by: Shriram S
+
 RegisterNumber:  22008494
 
 Program for D FLIPFLOPs
@@ -234,7 +240,9 @@ endmodule
 ### PROGRAM 
 
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
+
 Developed by: Shriram S
+
 RegisterNumber:  22008494
 
 Program for T FLIPFLOPs
